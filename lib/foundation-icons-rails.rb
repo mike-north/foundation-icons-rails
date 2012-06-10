@@ -3,7 +3,9 @@ require "foundation-icons-rails/version"
 module Foundation
   module Icons
     module Rails
-      # Your code goes here...
+      require 'foundation-icons-rails/engine'
     end
   end
 end
+
+r
