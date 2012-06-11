@@ -54,7 +54,7 @@ If you've followed the optional step 3 above, you can go to the page
 
 To see a nice list of which icon corresponds to various letters, for each of the three foundation icons fonts (general, enclosed, social)
 ![Directory](https://github.com/TrueNorth/foundation-icons-rails/raw/master/public/img/directory.png)
-
+In some situations, this may be better than looking at a reference on some other website, because it shows you how the icons will look with all of the other CSS in your web application. The directory will be rendered using your default layout (usually ```application.html.erb``` or ```application.html.haml``` or something).
 
 ## Contributing
 
