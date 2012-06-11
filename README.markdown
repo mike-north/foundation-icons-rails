@@ -1,4 +1,4 @@
-# Foundation::Icons::Rails
+# Foundation Icons for R
 
 TODO: Write a gem description
 
