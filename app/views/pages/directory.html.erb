@@ -1,0 +1,70 @@
+<%- arr = "abcdefghijklmnopqrstuvwxyz[]\;',./" %>
+
+<h1>General</h1>
+<table class="table table-bordered">
+  <% (0..5).each do |y| %>
+      <tr>
+        <% (0..13).each do |x| %>
+            <% if (y.odd?) %>
+                <td style="background: #eee; text-align: center">
+                  <b><%= "#{arr.at(13*((y-1)/2)+x)}" %></b>
+                </td>
+            <% else %>
+                <td style="text-align: center; padding: 5px; height: 36px">
+                  <% if 13*((y-1)/2)+x < 26 %>
+                      <div class="glyph general" style="font-size: 24px; line-height: 24px">
+                        <%= arr.at(13*((y)/2)+x) %>
+                      </div>
+                  <% end %>
+                </td>
+            <% end %>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+
+<h1>Enclosed</h1>
+<table class="table table-bordered">
+  <% (0..5).each do |y| %>
+      <tr>
+        <% (0..13).each do |x| %>
+            <% if (y.odd?) %>
+                <td style="background: #eee; text-align: center">
+                  <b><%= "#{arr.at(13*((y-1)/2)+x)}" %></b>
+                </td>
+            <% else %>
+                <td style="text-align: center; padding: 5px; height: 36px">
+                  <% if 13*((y-1)/2)+x < 26 %>
+                      <div class="glyph enclosed" style="font-size: 24px; line-height: 24px">
+                        <%= arr.at(13*((y)/2)+x) %>
+                      </div>
+                  <% end %>
+                </td>
+            <% end %>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+
+<h1>Social</h1>
+<table class="table table-bordered">
+  <% (0..3).each do |y| %>
+      <tr>
+        <% (0..13).each do |x| %>
+            <% if (y.odd?) %>
+                <td style="background: #eee; text-align: center">
+                  <b><%= "#{arr.at(13*((y-1)/2)+x)}" %></b>
+                </td>
+            <% else %>
+                <td style="text-align: center; padding: 5px; height: 36px">
+                  <% if 13*((y-1)/2)+x < 26 %>
+                      <div class="glyph social" style="font-size: 24px; line-height: 24px">
+                        <%= arr.at(13*((y)/2)+x) %>
+                      </div>
+                  <% end %>
+                </td>
+            <% end %>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
