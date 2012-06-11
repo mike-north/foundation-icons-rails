@@ -1,12 +1,27 @@
 # Foundation Icons for R
 
-TODO: Write a gem description
+An easy way to use [ZURB's Foundation Icons](http://www.zurb.com/playground/foundation-icons) in a Rails 3 application.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1\. Add this line to your application's Gemfile:
 
-    gem 'foundation-icons-rails'
+```ruby
+gem 'foundation-icons-rails'
+```
+
+2\. Add this line to your stylesheet
+
+```css
+*= require foundation-icons
+```
+
+3\. (Optional) Add something like this to your routes.rb file
+
+```ruby
+mount Foundation::Icons::Rails::Engine => '/fi', :as => :foundation_icons
+```
+
 
 And then execute:
 
