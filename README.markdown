@@ -41,6 +41,7 @@ To use an icon, simply create a some HTML element with some special CSS classes
 ```html
     <span class="glyph general">l</span>
 ```
+and you'll see something like this ![Globe](https://github.com/TrueNorth/foundation-icons-rails/raw/master/app/assets/images/l.png)
 
 To use the 'enclosed', or 'social' fonts, simply use```<span class="glyph enclosed">l</span>``` or ```<span class="glyph socia">l</span>```, respectively.
 
@@ -52,7 +53,7 @@ If you've followed the optional step 3 above, you can go to the page
     http://localhost:3000/fi/directory
 
 To see a nice list of which icon corresponds to various letters, for each of the three foundation icons fonts (general, enclosed, social)
-
+![Directory](https://github.com/TrueNorth/foundation-icons-rails/raw/master/app/assets/images/directory.png)
 
 
 ## Contributing
